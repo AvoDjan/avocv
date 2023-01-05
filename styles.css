@@ -1,0 +1,136 @@
+/* Element de police */
+
+@font-face 
+{
+    font-family: 'DroidSans-webfont';
+    src: url('polices/DroidSans-webfont.eot');
+    src: url('polices/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/DroidSans-webfont.woff') format('woff'),
+         url('polices/DroidSans-webfont.ttf') format('truetype'),
+         url('polices/DroidSans-webfont.svg#DroidSans-webfont') format('svg');
+}
+
+/* Eléments principaux de la page */
+
+body
+{ 
+    background-image: url(images/greyzz.png);
+    position: relative;
+}
+
+
+
+#liseret
+{
+    background-image: url(images/lodyas.png);
+    border-radius: 10px;
+    width: 10%;
+    height: 500px;
+    position: absolute;
+    top: -13px;
+    margin-right: 3%;   
+}
+
+
+
+#conteneur h1 
+{
+    font-family: 'DroidSans-webfont', Arial, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
+#conteneur p
+{
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    left: 2%;
+}
+
+
+
+img
+{
+    float: right;
+    margin-right: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+/* Corps de la page */
+
+section
+{
+    display: flex;
+    margin-left: 10%;
+    width: 895px;
+    height:0px
+}
+
+section h2
+{
+    font-size: 2em;
+    font-family: 'DroidSans-webfont', arial, sans-serif;
+    color: #6E4A46;
+    margin-left: 15%;
+}
+
+#experience ul
+{
+    margin-left: 10%;
+    list-style-image: url('images/fleche.png');
+}
+
+#competences ul
+{
+    margin-left: 10px;
+    list-style-image: url('images/fleche.png');
+}
+
+#formation
+{
+    margin-left: 10%px;
+    list-style-image: url('images/fleche.png');
+}
+
+@media all and (max-width: 1024px)
+{
+
+    #liseret
+    {
+        display: none;
+    }
+
+    section
+    {
+        flex-direction: column;
+        width:auto;
+    }
+
+    #experience ul
+    {
+        list-style-image: none;
+        list-style-type: none;
+    }
+
+    #competences ul
+    {
+        list-style-image: none;
+        list-style-type: none;
+    }
+
+    #formation ul
+    {
+        list-style-image: none;
+        list-style-type: none;
+    }
+
+    img
+    {
+        position: relative;
+        left: 10px;
+    }
+}
